@@ -3951,6 +3951,11 @@ remark-rehype@^9.0.0:
     mdast-util-to-hast "^11.0.0"
     unified "^10.0.0"
 
+remix-themes@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/remix-themes/-/remix-themes-1.1.4.tgz#22ff5e26b974491d39d2e4057e12ec102a04504a"
+  integrity sha512-5oPLm1JygTaSQDg4SqqS8DRS/tKq4bb3Ky2eze6fdqNu77jyxocjC8SstdgKDqa6iYh7LpRZ+xiIjJjc24JYHA==
+
 remix@^1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/remix/-/remix-1.2.3.tgz#49c1b47b70a4d7ce8830921ceb4b058f5054cf16"
