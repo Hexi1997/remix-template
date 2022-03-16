@@ -14,6 +14,7 @@ import type { MetaFunction } from "remix";
 import {createThemeSessionResolver,ThemeProvider, useTheme, PreventFlashOnWrongTheme} from 'remix-themes'
 import themeCss from './styles/theme.css'
 import globalCss from './styles/global.css'
+import { i18n } from "./i18n.server";
 const sessionStorage = createCookieSessionStorage({
   cookie: {
     name: 'remix-themes',
@@ -30,8 +31,10 @@ export const themeSessionResolver = createThemeSessionResolver(sessionStorage)
 
 export const loader: LoaderFunction = async ({request}) => {
   const {getTheme} = await themeSessionResolver(request)
+  // let locale = await i18n.getLocale(request);
   return {
     theme: getTheme(),
+    // locale
   }
 }
 
